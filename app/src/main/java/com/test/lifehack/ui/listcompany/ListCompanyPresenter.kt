@@ -28,6 +28,7 @@ class ListCompanyPresenter:MvpPresenter<ListCompanyView>() {
                 viewState.hideProgress()
                 viewState.showCompanyList(it)
             },{
+                viewState.hideProgress()
                 viewState.showError()
                 it.printStackTrace()
             }))
